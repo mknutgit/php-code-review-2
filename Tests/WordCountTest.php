@@ -8,12 +8,12 @@
         function test_wordCount_one()
         {
             //Arrange
-            $test_WordCount = new RepeatCounter;
+            $test_WordCount_one = new RepeatCounter;
             $input = "Hello";
             $input2 = "Hello";
 
             //Act
-            $result = $test_WordCount->countWord($input, $input2);
+            $result = $test_WordCount_one->countWord($input, $input2);
 
             //Assert
             $this->assertEquals(1, $result);
@@ -22,15 +22,15 @@
         function test_wordCount_zero()
         {
             //Arrange
-            $test_WordCount = new RepeatCounter;
+            $test_WordCount_zero = new RepeatCounter;
             $input = "Hello";
-            $input2 = "Hello";
+            $input2 = "Hell";
 
             //Act
-            $result = $test_WordCount->countWord($input, $input2);
+            $result = $test_WordCount_zero->countWord($input, $input2);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals(0, $result);
         }
 
 
@@ -40,4 +40,3 @@
     }
 
 ?>
-$sentence_clean = preg_replace('/[^a-z]+/i', ' ', $sentence_lower);
