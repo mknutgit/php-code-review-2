@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Repeat Counter</title>
+    </head>
+
+        <body>
+          <div class='container'>
+            <div class='jumbotron'>
+              <h1>Count Specific Words in Any Sentence</h1>
+            </div>  <!-- /JUMBOTRON -->
+
+              <div class='col-sm-6'>
+                  <h2>Enter Sentence and Word to Search for Below:</h2>
+                  <form class='form-group' action='/userInput' method='post'>
+                      <div class='form-group'>
+                        <label for='phrase'>Sentence</label>
+                        <input id='phrase' name='phrase' type='text'>
+                      </div>
+                      <div>
+                        <label for='find'>Word</label>
+                        <input id='find' name='find' type='text'>
+                      </div>
+
+                      <button class='btn btn-warning' type='submit'>Find the Count!</button>
+                </form>
+            </div>  <!-- /col-sm-6 -->
+          </div><!--row-->
+        </body>
+</html>

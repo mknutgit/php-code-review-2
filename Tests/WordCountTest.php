@@ -61,6 +61,21 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_wordCount_no_partial()
+        {
+            //Arrange
+            $test_WordCount_no_partial = new RepeatCounter;
+            $input = "Hello there, I said 'hello.', please say helloooo!";
+            $input2 = "hello";
+
+            //Act
+            $result = $test_WordCount_no_partial->countWord($input, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
+
 
 
 
