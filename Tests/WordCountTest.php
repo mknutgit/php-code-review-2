@@ -33,6 +33,19 @@
             $this->assertEquals(0, $result);
         }
 
+        function test_wordCount_phrase()
+        {
+            //Arrange
+            $test_WordCount_phrase = new RepeatCounter;
+            $input = "Hello there, I said hello";
+            $input2 = "Hello";
+
+            //Act
+            $result = $test_WordCount_phrase->countWord($input, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
 
 
 
