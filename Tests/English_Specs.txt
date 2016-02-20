@@ -16,26 +16,26 @@ string input: wine
 word find input: beer
 output: 0
 
-3. Find a matching word in a multiple word phrase. Returns count of one.
+3. Find a matching word in a multiple word phrase.
 
 Simplest test for matching word in multiple word string.
 
-string input: I prefer red wine.
-word find input: wine
-output: 1
-
-4. Find a matching word in a multiple word phase with more than one instance of the word.
-
-Simplest test for counting multiple matches.
-
-string input: White wine or red wine are both great. 
+string input: White wine or red wine are both great.
 word find input: wine
 output: 2
 
-5. Find a matching word regardless of capitalization or punctuation.
+4. Find a matching word regardless of capitalization or punctuation.
 
 Simplest test for counting word regardless of capitalization or punctuation.
 
 string input: Wine is not just for those who love wine.
 word find input: wine
 output: 2
+
+5. Ignore partial matches.
+
+Simplest test to confirm partial matches are ignored.
+
+string input: Let's drink wine at the winery.
+word find input: wine
+output: 1
