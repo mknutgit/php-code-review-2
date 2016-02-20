@@ -12,10 +12,10 @@
         return $app['twig']->render('form.html.twig');
     });
 
-    $app->get("/view_title_case", function() use($app) {
-        $my_TitleCaseGenerator = new TitleCaseGenerator;
-        $title_cased_phrase = $my_TitleCaseGenerator->makeTitleCase($_GET['phrase']);
-        return $app['twig']->render('title_cased.twig', array('result' => $word_count));
+    $app->post("/userInput", function() use($app) {
+        $my_RepeatCounter = new RepeatCounter;
+        $result = $my_RepeatCounter->countWord($_POST['phrase'], $_POST['find']);
+        return $app['twig']->render('results.html.twig', array('result' => $result));
     });
 
     return $app;
