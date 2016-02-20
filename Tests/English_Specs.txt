@@ -24,7 +24,7 @@ string input: White wine or red wine are both great.
 word find input: wine
 output: 2
 
-4. Find a matching word regardless of capitalization or punctuation.
+4. Find a matching word regardless of punctuation.
 
 Simplest test for counting word regardless of capitalization or punctuation.
 
